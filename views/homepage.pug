@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+
+  body
+    h1 Movies
+
+    a(href="/update-cobj") Add to this table
+
+    br
+    br
+
+    table(border="1")
+      tr
+        th Name
+        th Director
+        th Genre
+
+      each movie in data
+        tr
+          td= movie.properties.name
+          td= movie.properties.director
+          td= movie.properties.genre
